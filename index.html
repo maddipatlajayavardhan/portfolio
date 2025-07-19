@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Jayavardhan | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <!-- Animated Background -->
+  <div class="animated-bg"></div>
+
+  <!-- Main Content -->
+  <div class="main-wrapper">
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="container">
+        <h1>Hello, I'm <span>Jayavardhan</span></h1>
+        <p>Driven and solutions-focused Computer Science undergraduate passionate about solving real-world problems using technology.</p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container about-content">
+        <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile">
+        <p>I specialize in building secure web apps and data-driven projects using Java, Python, and MySQL. I'm passionate about AI, analytics, and full-stack development.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+
+          <div class="project-card">
+            <img src="{{ url_for('static', filename='images/sentiment-analysis.png') }}" alt="Sentiment Analysis">
+            <h3>Sentiment Analysis</h3>
+            <p>CNN-based model to classify IMDB reviews using Python. Improved accuracy using pre-trained word embeddings in Google Colab.</p>
+          </div>
+
+          <div class="project-card">
+            <img src="{{ url_for('static', filename='images/banking-app.png') }}" alt="Banking App">
+            <h3>Banking Application</h3>
+            <p>Secure banking platform with login, registration, transactions built using Java, MySQL, and TOMCAT with modular backend.</p>
+          </div>
+
+          <div class="project-card">
+            <img src="{{ url_for('static', filename='images/employee-time-tracker.png') }}" alt="Time Tracker">
+            <h3>Employee Time Tracker</h3>
+            <p>RBAC-based tracker with productivity charts. Prevented duplicate tasks and enforced task limits using Java and MySQL.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <ul>
+          <li>Java, Python</li>
+          <li>SQL, MySQL</li>
+          <li>HTML, CSS, Flask</li>
+          <li>Google Colab, Eclipse, Power BI</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section (with your details) -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p><strong>Name:</strong> Maddipatla Jayavardhan</p>
+        <p><strong>Phone:</strong> <a href="tel:+919353966915">+91-9353966915</a></p>
+        <p><strong>Email:</strong> <a href="mailto:jjaya2599@gmail.com">jjaya2599@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> 
+          <a href="https://www.linkedin.com/in/jayavardhan-maddipatla-9ab8762ba" target="_blank">
+            linkedin.com/in/jayavardhan-maddipatla
+          </a>
+        </p>
+
+        <form action="https://formsubmit.co/jjaya2599@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Contact From Portfolio">
+          <input type="hidden" name="_template" value="box">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Maddipatla Jayavardhan. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
